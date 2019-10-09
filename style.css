@@ -1,0 +1,36 @@
+ul li {
+    list-style: none;
+}
+.d-flex {
+    display: flex!important;
+}
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;
+}
+body {
+    margin: 10px;
+}
+div {
+    width: 100%;
+    margin: 10px;
+}
+.image-fluid {
+    max-width: 100%;
+    height: auto;
+}
+a:hover {
+    text-decoration: none;
+    color: rgb(243, 243, 125);
+    transition-duration: 1s;
+}
+
+.cardme {
+    max-height: 100%;
+    flex-wrap: wrap;
+}

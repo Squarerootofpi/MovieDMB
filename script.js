@@ -19,8 +19,9 @@ let searchMovie = function(event) {
             results += "<li>Actors: " + json.Actors + "</li>";
             results += "<li>Plot: " + json.Plot + "</li>";
             results += "</ul>";
-            results += "<img src=\"" + json.Poster + " alt=\"Poster\" height=\"450\" width=\"300\">";
+            results += "<img class=\"image-fluid\" src=\"" + json.Poster + " alt=\"Poster\" height=\"450\" width=\"300\">";
             }
+            
             
             document.getElementById("result").innerHTML = results;
         })
