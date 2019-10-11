@@ -18,12 +18,22 @@ let searchMovie = function(event) {
             results += "<li><b>Released: </b>" + json.Released + "</li>";
             results += "<li><b>Actors: </b>" + json.Actors + "</li>";
             results += "<li><b>Plot: </b>" + json.Plot + "</li>";
-            results += "<button type=\"button\" onclick=\"moreDetails\">More Details?</button><br>"
+            results += '<div id="detail">';
+            results += "<button type=\"button\" onclick=\"moreDetails()\">More Details?</button><br>"
+            results += '</div>'
             results += "</ul>";
             results += "<img class=\"image-fluid\" src=\"" + json.Poster + " alt=\"Poster\">";
             }
             
             
             document.getElementById("result").innerHTML = results;
+            let moreDetails = function(json) {
+                var details = "";
+                details += '<li>' + json.Director + " is the director.</li>";
+                document.getElementById("detail").innerHTML = details;
+            }
+        
         })
+        
 }
+
