@@ -15,11 +15,12 @@ let searchMovie = function(event) {
             else{
             results += "<h3>" + json.Title + "</h3>"
             results += "<ul>";
-            results += "<li>Released: " + json.Released + "</li>";
-            results += "<li>Actors: " + json.Actors + "</li>";
-            results += "<li>Plot: " + json.Plot + "</li>";
+            results += "<li><b>Released: </b>" + json.Released + "</li>";
+            results += "<li><b>Actors: </b>" + json.Actors + "</li>";
+            results += "<li><b>Plot: </b>" + json.Plot + "</li>";
+            results += "<button type=\"button\" onclick=\"moreDetails\">More Details?</button><br>"
             results += "</ul>";
-            results += "<img class=\"image-fluid\" src=\"" + json.Poster + " alt=\"Poster\" height=\"450\" width=\"300\">";
+            results += "<img class=\"image-fluid\" src=\"" + json.Poster + " alt=\"Poster\">";
             }
             
             
